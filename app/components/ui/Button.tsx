@@ -27,7 +27,7 @@ export default function Button({
     inline-flex items-center justify-center
     rounded-full px-6 py-3
     text-sm font-medium
-    transition
+    transition duration-300 hover:-translate-y-0.5 hover:shadow-lg
     ${styles[variant]}
     ${className}
   `;

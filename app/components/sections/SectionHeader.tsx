@@ -1,3 +1,5 @@
+import Reveal from "@/components/ui/Reveal";
+
 export default function SectionHeader({
   eyebrow,
   title,
@@ -8,7 +10,7 @@ export default function SectionHeader({
   description?: string;
 }) {
   return (
-    <div className="mb-12 max-w-3xl">
+    <Reveal className="mb-12 max-w-3xl">
       {eyebrow && (
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-gray-500">
           {eyebrow}
@@ -24,6 +26,6 @@ export default function SectionHeader({
           {description}
         </p>
       )}
-    </div>
+    </Reveal>
   );
 }

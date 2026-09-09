@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navigation } from "@/data/navigation";
 import MobileMenu from "./MobileMenu";
@@ -17,9 +18,16 @@ export default function Navbar() {
 
           <Link
             href="/"
-            className="text-2xl font-bold tracking-tight"
+            className="flex items-center"
           >
-            WATEEN
+            <Image
+              src="/wateen-logo.png"
+              alt="Wateen"
+              width={140}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -27,7 +35,7 @@ export default function Navbar() {
               <div key={item.title} className="group relative">
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 text-sm font-medium"
+                  className="flex items-center gap-1 text-sm font-medium text-[#5DAD54] hover:text-[#478c40]"
                 >
                   {item.title}
 
@@ -43,7 +51,7 @@ export default function Navbar() {
                         <div key={child.title} className="mb-5 last:mb-0">
                           <Link
                             href={child.href}
-                            className="font-semibold"
+                            className="font-semibold text-[#5DAD54] hover:text-[#478c40]"
                           >
                             {child.title}
                           </Link>
@@ -54,7 +62,7 @@ export default function Navbar() {
                                 <Link
                                   key={subItem.title}
                                   href={subItem.href}
-                                  className="block text-sm text-gray-600 hover:text-black"
+                                  className="block text-sm text-[#5DAD54] hover:text-[#478c40]"
                                 >
                                   {subItem.title}
                                 </Link>
@@ -71,14 +79,14 @@ export default function Navbar() {
 
             <Link
               href="/careers"
-              className="text-sm font-medium"
+              className="text-sm font-medium text-[#5DAD54] hover:text-[#478c40]"
             >
               Careers
             </Link>
 
             <Link
               href="/investors"
-              className="text-sm font-medium"
+              className="text-sm font-medium text-[#5DAD54] hover:text-[#478c40]"
             >
               Investors
             </Link>
@@ -86,14 +94,14 @@ export default function Navbar() {
             <button
               onClick={() => setSearchOpen(true)}
               aria-label="Search"
-              className="text-xl"
+              className="text-xl text-[#5DAD54] hover:text-[#478c40]"
             >
               ⌕
             </button>
 
             <Link
               href="/contact"
-              className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white"
+              className="rounded-full bg-[#5DAD54] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#478c40]"
             >
               Contact Us
             </Link>

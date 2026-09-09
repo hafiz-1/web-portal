@@ -7,22 +7,22 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black" />
 
       <Container className="relative flex min-h-[75vh] items-center py-24">
-        <div className="max-w-4xl">
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-gray-400">
+        <div className="hero-content max-w-4xl">
+          <p className="hero-item mb-6 text-sm font-medium uppercase tracking-[0.25em] text-gray-400">
             Wateen
           </p>
 
-          <h1 className="text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+          <h1 className="hero-item text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
             Powering the digital future.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-300 md:text-xl">
+          <p className="hero-item mt-8 max-w-2xl text-lg leading-8 text-gray-300 md:text-xl">
             Connectivity, cloud, cybersecurity and digital
             infrastructure designed to help businesses connect,
             transform and grow.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="hero-item mt-10 flex flex-wrap gap-4">
             <Button href="/solutions">
               Explore Solutions
             </Button>
