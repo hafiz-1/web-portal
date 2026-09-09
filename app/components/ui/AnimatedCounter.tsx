@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function AnimatedCounter({
   value,
@@ -9,12 +9,47 @@ export default function AnimatedCounter({
   value: number;
   suffix?: string;
 }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const frameRef = useRef<number | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    const element = ref.current;
+
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.4 },
+    );
+
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+      if (frameRef.current !== null) {
+        cancelAnimationFrame(frameRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) {
+      if (frameRef.current !== null) {
+        cancelAnimationFrame(frameRef.current);
+      }
+      setCount(0);
+      return;
+    }
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setCount(value);
+      return;
+    }
+
     const duration = 1600;
     const start = performance.now();
-    let frame = 0;
 
     const update = (now: number) => {
       const progress = Math.min((now - start) / duration, 1);
@@ -22,14 +57,19 @@ export default function AnimatedCounter({
       setCount(Math.round(value * easedProgress));
 
       if (progress < 1) {
-        frame = requestAnimationFrame(update);
+        frameRef.current = requestAnimationFrame(update);
       }
     };
 
-    frame = requestAnimationFrame(update);
+    setCount(0);
+    frameRef.current = requestAnimationFrame(update);
 
-    return () => cancelAnimationFrame(frame);
-  }, [value]);
+    return () => {
+      if (frameRef.current !== null) {
+        cancelAnimationFrame(frameRef.current);
+      }
+    };
+  }, [isVisible, value]);
 
-  return <>{count}{suffix}</>;
+  return <span ref={ref}>{count}{suffix}</span>;
 }

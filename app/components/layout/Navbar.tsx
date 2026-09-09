@@ -51,7 +51,7 @@ export default function Navbar() {
                         <div key={child.title} className="mb-5 last:mb-0">
                           <Link
                             href={child.href}
-                            className="font-semibold text-[#5DAD54] hover:text-[#478c40]"
+                            className="font-semibold text-black hover:text-[#5DAD54]"
                           >
                             {child.title}
                           </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
                                 <Link
                                   key={subItem.title}
                                   href={subItem.href}
-                                  className="block text-sm text-[#5DAD54] hover:text-[#478c40]"
+                                  className="block text-sm text-black hover:text-[#5DAD54]"
                                 >
                                   {subItem.title}
                                 </Link>
