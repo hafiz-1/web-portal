@@ -47,7 +47,7 @@ export default function AnimatedCounter({
       return;
     }
 
-    const duration = 1600;
+    const duration = 900;
     const start = performance.now();
 
     const update = (now: number) => {

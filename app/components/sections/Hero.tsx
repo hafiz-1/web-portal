@@ -27,11 +27,7 @@ export default function Hero() {
               Explore Solutions
             </Button>
 
-            <Button
-              href="/contact"
-              variant="secondary"
-              className="border-white text-white hover:bg-white hover:text-black"
-            >
+            <Button href="/contact" variant="secondary">
               Talk to an Expert
             </Button>
           </div>

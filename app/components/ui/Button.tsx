@@ -18,7 +18,7 @@ export default function Button({
     primary:
       "bg-black text-white hover:bg-gray-800",
     secondary:
-      "border border-black text-black hover:bg-black hover:text-white",
+      "border border-white/80 bg-[#5DAD54]/15 text-white hover:bg-[#5DAD54]/25",
     ghost:
       "text-black hover:underline",
   };
