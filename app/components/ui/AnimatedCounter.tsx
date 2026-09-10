@@ -39,12 +39,11 @@ export default function AnimatedCounter({
       if (frameRef.current !== null) {
         cancelAnimationFrame(frameRef.current);
       }
-      setCount(0);
       return;
     }
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setCount(value);
+      frameRef.current = requestAnimationFrame(() => setCount(value));
       return;
     }
 
@@ -61,7 +60,6 @@ export default function AnimatedCounter({
       }
     };
 
-    setCount(0);
     frameRef.current = requestAnimationFrame(update);
 
     return () => {
@@ -71,5 +69,5 @@ export default function AnimatedCounter({
     };
   }, [isVisible, value]);
 
-  return <span ref={ref}>{count}{suffix}</span>;
+  return <span ref={ref}>{isVisible ? count : 0}{suffix}</span>;
 }

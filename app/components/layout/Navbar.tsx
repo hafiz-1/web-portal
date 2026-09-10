@@ -23,9 +23,9 @@ export default function Navbar() {
             <Image
               src="/wateen-logo.png"
               alt="Wateen"
-              width={140}
-              height={40}
-              className="h-10 w-auto object-contain"
+              width={170}
+              height={48}
+              className="h-12 w-auto object-contain"
               priority
             />
           </Link>

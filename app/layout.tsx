@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="bg-white text-gray-950 antialiased">
         <Navbar />
 
-        <main>{children}</main>
+        <main className="app-background">{children}</main>
 
         <Footer />
       </body>

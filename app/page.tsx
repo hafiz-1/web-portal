@@ -37,7 +37,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="pb-8">
         <Container>
           <SectionHeader
             eyebrow="Why Wateen"
