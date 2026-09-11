@@ -17,7 +17,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 				<Link href="/" onClick={onClose} className="text-2xl font-bold">
 					WATEEN
 				</Link>
-				<button type="button" onClick={onClose} aria-label="Close menu">
+				<button className="button-motion" type="button" onClick={onClose} aria-label="Close menu">
 					Close
 				</button>
 			</div>

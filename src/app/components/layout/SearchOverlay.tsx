@@ -44,7 +44,7 @@ export default function SearchOverlay({ open, onClose }: SearchOverlayProps) {
             placeholder="Search"
             className="min-w-0 flex-1 border-b border-gray-300 py-3 text-lg outline-none focus:border-black"
           />
-          <button type="button" onClick={onClose} aria-label="Close search">
+          <button className="button-motion" type="button" onClick={onClose} aria-label="Close search">
             Close
           </button>
         </div>

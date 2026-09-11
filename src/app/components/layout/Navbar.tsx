@@ -94,21 +94,21 @@ export default function Navbar() {
             <button
               onClick={() => setSearchOpen(true)}
               aria-label="Search"
-              className="text-xl text-[#5DAD54] hover:text-[#478c40]"
+              className="button-motion text-xl text-[#5DAD54] hover:text-[#478c40]"
             >
               ⌕
             </button>
 
             <Link
               href="/contact"
-              className="rounded-full bg-[#5DAD54] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#478c40]"
+              className="button-motion rounded-full bg-[#5DAD54] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#478c40]"
             >
               Contact Us
             </Link>
           </nav>
 
           <button
-            className="text-2xl lg:hidden"
+            className="button-motion text-2xl lg:hidden"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
