@@ -101,7 +101,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="button-motion rounded-full bg-[#5DAD54] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#478c40]"
+              className="button-motion rounded-full bg-[#7BC96F] px-5 py-2.5 text-sm font-medium text-black hover:bg-[#91D985]"
             >
               Contact Us
             </Link>

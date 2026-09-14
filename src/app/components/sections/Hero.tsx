@@ -12,7 +12,7 @@ export default function Hero() {
             Wateen
           </p>
 
-          <h1 className="hero-item text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
+          <h1 className="hero-item pb-2 text-5xl font-semibold leading-[1.15] tracking-tight md:text-7xl">
             Powering the digital future.
           </h1>
 

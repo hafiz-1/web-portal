@@ -16,13 +16,13 @@ export default function Button({
 }: ButtonProps) {
   const styles = {
     primary:
-      "bg-black text-white hover:bg-gray-800",
+      "bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black",
     secondary:
-      "border border-white/80 bg-[#5DAD54]/15 text-white hover:bg-[#5DAD54]/25",
+      "bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black",
     accent:
       "bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black",
     ghost:
-      "text-black hover:underline",
+      "bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black",
   };
 
   const classes = `

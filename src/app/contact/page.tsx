@@ -64,7 +64,7 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="button-motion rounded-full bg-black px-7 py-3 text-white"
+              className="button-motion rounded-full bg-[#7BC96F] px-7 py-3 text-black hover:bg-[#91D985]"
             >
               Submit Inquiry
             </button>

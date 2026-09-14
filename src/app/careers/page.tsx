@@ -24,7 +24,7 @@ export default function CareersPage() {
 
           <Link
             href="/careers/jobs"
-            className="mt-8 inline-block rounded-full bg-white px-6 py-3 text-black"
+            className="button-motion mt-8 inline-block rounded-full bg-[#7BC96F] px-6 py-3 text-black hover:bg-[#91D985]"
           >
             Explore Jobs
           </Link>
