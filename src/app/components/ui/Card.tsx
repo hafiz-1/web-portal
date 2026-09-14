@@ -8,7 +8,7 @@ export default function Card({
 	className?: string;
 }) {
 	return (
-		<article className={`rounded-2xl border border-gray-200 bg-white p-8 transition duration-500 ease-out hover:-translate-y-1 hover:border-[#5DAD54]/50 hover:shadow-xl hover:shadow-[#5DAD54]/10 ${className}`}>
+		<article className={`surface-card flex h-full flex-col p-6 transition duration-300 ease-out hover:-translate-y-1 hover:border-[#5DAD54]/55 hover:shadow-[0_18px_40px_rgb(31_84_37_/_0.10)] sm:p-7 ${className}`}>
 			{children}
 		</article>
 	);

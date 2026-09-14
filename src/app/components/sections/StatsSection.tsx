@@ -26,14 +26,14 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <Reveal className="motion-grid grid grid-cols-2 gap-8 md:grid-cols-4">
+    <Reveal className="motion-grid grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#dce6dd] bg-[#dce6dd] md:grid-cols-4">
       {stats.map((stat) => (
-        <div key={stat.label}>
-          <p className="text-4xl font-semibold md:text-5xl">
+        <div key={stat.label} className="bg-white p-6 sm:p-8">
+          <p className="text-4xl font-semibold tracking-tight text-[#245f2e] md:text-5xl">
             <AnimatedCounter value={stat.value} suffix={stat.suffix} />
           </p>
 
-          <p className="mt-2 text-sm text-gray-500">
+          <p className="mt-2 text-sm text-[#5c6a60]">
             {stat.label}
           </p>
         </div>

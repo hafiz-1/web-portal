@@ -9,17 +9,17 @@ export default function IndustryCard({
 }) {
   return (
     <Card>
-      <h3 className="text-xl font-semibold">
+      <h3 className="text-xl font-semibold tracking-tight text-[#132019]">
         {industry.title}
       </h3>
 
-      <p className="mt-3 text-sm leading-6 text-gray-600">
+      <p className="mt-3 text-sm leading-6 text-[#5c6a60]">
         {industry.description}
       </p>
 
       <Link
         href={`/industries/${industry.slug}`}
-        className="mt-6 inline-block text-sm font-medium"
+        className="text-link mt-auto pt-7 inline-flex items-center gap-2 text-sm"
       >
         Explore →
       </Link>

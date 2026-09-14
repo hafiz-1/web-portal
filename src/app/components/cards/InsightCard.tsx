@@ -9,21 +9,21 @@ export default function InsightCard({
 }) {
   return (
     <Card>
-      <p className="text-sm text-gray-500">
+      <p className="page-kicker">
         {insight.category}
       </p>
 
-      <h3 className="mt-3 text-xl font-semibold">
+      <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#132019]">
         {insight.title}
       </h3>
 
-      <p className="mt-3 text-sm leading-6 text-gray-600">
+      <p className="mt-3 text-sm leading-6 text-[#5c6a60]">
         {insight.excerpt}
       </p>
 
       <Link
         href={`/insights/${insight.slug}`}
-        className="mt-6 inline-block text-sm font-medium"
+        className="text-link mt-auto pt-7 inline-flex items-center gap-2 text-sm"
       >
         Read More →
       </Link>

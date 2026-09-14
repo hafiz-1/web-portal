@@ -13,15 +13,15 @@ export default function ContactPage() {
   }
 
   return (
-    <Section>
+    <Section className="bg-[#f8fbf7]">
       <Container>
-        <div className="grid gap-16 lg:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <div>
             <p className="text-sm uppercase tracking-widest text-gray-500">
               Contact
             </p>
 
-            <h1 className="mt-4 text-5xl font-semibold">
+            <h1 className="page-title mt-4">
               Let&apos;s talk.
             </h1>
 
@@ -33,22 +33,22 @@ export default function ContactPage() {
 
           <form
             onSubmit={handleSubmit}
-            className="space-y-5"
+            className="surface-card space-y-5 p-6 sm:p-8"
           >
             <input
               required
               placeholder="Name"
-              className="w-full rounded-xl border p-4"
+              className="field"
             />
 
             <input
               required
               type="email"
               placeholder="Email"
-              className="w-full rounded-xl border p-4"
+              className="field"
             />
 
-            <select className="w-full rounded-xl border p-4">
+            <select className="field">
               <option>Sales Inquiry</option>
               <option>Existing Customer</option>
               <option>Partnership</option>
@@ -59,7 +59,7 @@ export default function ContactPage() {
               required
               placeholder="How can we help?"
               rows={6}
-              className="w-full rounded-xl border p-4"
+              className="field resize-y"
             />
 
             <button

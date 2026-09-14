@@ -9,21 +9,17 @@ export default function SolutionCard({
 }) {
   return (
     <Card className="group">
-      <p className="text-sm text-gray-500">
-        {solution.category}
-      </p>
-
-      <h3 className="mt-3 text-2xl font-semibold">
+      <h3 className="text-2xl font-semibold tracking-tight text-[#132019]">
         {solution.title}
       </h3>
 
-      <p className="mt-3 text-gray-600">
+      <p className="mt-3 leading-7 text-[#5c6a60]">
         {solution.description}
       </p>
 
       <Link
         href={`/solutions/${solution.slug}`}
-        className="mt-6 inline-block font-medium"
+        className="text-link mt-7 inline-flex items-center gap-2 text-sm"
       >
         Explore →
       </Link>
