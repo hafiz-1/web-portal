@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 type ButtonProps = {
   children: ReactNode;
   href?: string;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "accent" | "ghost";
   className?: string;
 };
 
@@ -19,6 +19,8 @@ export default function Button({
       "bg-black text-white hover:bg-gray-800",
     secondary:
       "border border-white/80 bg-[#5DAD54]/15 text-white hover:bg-[#5DAD54]/25",
+    accent:
+      "bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black",
     ghost:
       "text-black hover:underline",
   };

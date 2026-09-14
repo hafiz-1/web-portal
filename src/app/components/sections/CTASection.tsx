@@ -19,7 +19,7 @@ export default function CTASection() {
             <div className="mt-8">
               <Button
                 href="/contact"
-                className="bg-[#7BC96F] text-black hover:bg-[#91D985] hover:text-black"
+                variant="accent"
               >
                 Talk to an Expert
               </Button>

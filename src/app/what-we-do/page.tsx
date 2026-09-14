@@ -2,6 +2,7 @@ import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import SectionHeader from "@/components/sections/SectionHeader";
 import SolutionsGrid from "@/components/sections/SolutionsGrid";
+import CTASection from "@/components/sections/CTASection";
 import { services } from "@/data/services";
 import Link from "next/link";
 
@@ -59,6 +60,7 @@ export default function WhatWeDoPage() {
           </div>
         </Container>
       </Section>
+      <CTASection />
     </>
   );
 }
