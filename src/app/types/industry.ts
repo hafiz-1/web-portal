@@ -3,5 +3,6 @@ export type Industry = {
   title: string;
   slug: string;
   description: string;
+  image: string;
   solutions: string[];
 };

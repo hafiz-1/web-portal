@@ -7,6 +7,7 @@ export const industries: Industry[] = [
     slug: "enterprise",
     description:
       "Technology solutions designed for large and complex organizations.",
+    image: "/industries/enterprize.jpg",
     solutions: [
       "Connectivity",
       "Cloud & Data Center",
@@ -20,6 +21,7 @@ export const industries: Industry[] = [
     slug: "sme",
     description:
       "Flexible technology solutions that help growing businesses scale.",
+    image: "/industries/sme.jpg",
     solutions: [
       "Connectivity",
       "Cloud",
@@ -32,6 +34,7 @@ export const industries: Industry[] = [
     slug: "telecom-carriers",
     description:
       "High-capacity infrastructure and connectivity for telecom providers.",
+    image: "/industries/telecom-carriers.jpg",
     solutions: [
       "Connectivity",
       "Infrastructure",
@@ -43,6 +46,7 @@ export const industries: Industry[] = [
     slug: "public-sector",
     description:
       "Secure and reliable technology infrastructure for public organizations.",
+    image: "/industries/public-sector.jpg",
     solutions: [
       "Connectivity",
       "Cybersecurity",

@@ -2,6 +2,7 @@ export const navigation = [
   {
     title: "What We Do",
     href: "/what-we-do",
+    image: "/navigation/what-we-do.jpg",
     children: [
       {
         title: "Solutions",
@@ -39,6 +40,7 @@ export const navigation = [
   {
     title: "Industries",
     href: "/industries",
+    image: "/navigation/industries.jpg",
     children: [
       { title: "Enterprise", href: "/industries/enterprise" },
       { title: "SME", href: "/industries/sme" },
@@ -68,6 +70,7 @@ export const navigation = [
   {
     title: "About",
     href: "/about",
+    image: "/navigation/about.jpg",
     children: [
       { title: "Company Profile", href: "/about/company-profile" },
       { title: "Leadership", href: "/about/leadership" },

@@ -4,6 +4,7 @@ export type Solution = {
   slug: string;
   category: string;
   description: string;
+  image: string;
   audiences: string[];
   benefits: string[];
   featured?: boolean;
