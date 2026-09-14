@@ -10,14 +10,14 @@ export default function SectionHeader({
   description?: string;
 }) {
   return (
-    <Reveal className="mb-10 max-w-3xl lg:mb-14">
+    <Reveal className="mb-6 max-w-3xl lg:mb-8">
       {eyebrow && (
         <p className="page-kicker mb-4">
           {eyebrow}
         </p>
       )}
 
-      <h2 className="page-title text-3xl md:text-4xl">
+      <h2 className="page-title text-2xl md:text-3xl">
         {title}
       </h2>
 
