@@ -13,7 +13,7 @@ export default function InsightCard({
         {insight.category}
       </p>
 
-      <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#132019]">
+      <h3 className="gradient-text mt-3 text-xl font-semibold tracking-tight">
         {insight.title}
       </h3>
 
@@ -23,7 +23,7 @@ export default function InsightCard({
 
       <Link
         href={`/insights/${insight.slug}`}
-        className="text-link mt-7 inline-flex items-center gap-2 text-sm"
+        className="text-link mt-auto inline-flex items-center gap-2 pt-7 text-sm"
       >
         Read More →
       </Link>

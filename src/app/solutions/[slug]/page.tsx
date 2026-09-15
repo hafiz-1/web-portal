@@ -27,7 +27,7 @@ export default async function SolutionPage({
             {solution.category}
           </p>
 
-          <h1 className="mt-4 text-5xl font-semibold">
+          <h1 className="gradient-text mt-4 text-5xl font-semibold">
             {solution.title}
           </h1>
 
@@ -45,7 +45,7 @@ export default async function SolutionPage({
 
       <section className="bg-gray-50 py-20">
         <Container>
-          <h2 className="text-3xl font-semibold">
+          <h2 className="gradient-text text-3xl font-semibold">
             Key Benefits
           </h2>
 
@@ -64,7 +64,7 @@ export default async function SolutionPage({
 
       <Section>
         <Container>
-          <h2 className="text-3xl font-semibold">
+          <h2 className="gradient-text text-3xl font-semibold">
             Who is it for?
           </h2>
 

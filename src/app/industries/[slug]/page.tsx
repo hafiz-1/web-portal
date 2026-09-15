@@ -25,7 +25,7 @@ export default async function IndustryPage({
           Industry
         </p>
 
-        <h1 className="mt-4 text-5xl font-semibold">
+        <h1 className="gradient-text mt-4 text-5xl font-semibold">
           {industry.title}
         </h1>
 
@@ -33,7 +33,7 @@ export default async function IndustryPage({
           {industry.description}
         </p>
 
-        <h2 className="mt-16 text-3xl font-semibold">
+        <h2 className="gradient-text mt-16 text-3xl font-semibold">
           Relevant Solutions
         </h2>
 

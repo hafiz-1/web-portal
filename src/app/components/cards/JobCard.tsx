@@ -21,7 +21,7 @@ export default function JobCard({ job }: { job: Job }) {
 
       <Link
         href={`/careers/jobs/${job.slug}`}
-        className="text-link mt-7 inline-flex items-center gap-2 text-sm"
+        className="text-link mt-auto inline-flex items-center gap-2 pt-7 text-sm"
       >
         View Position →
       </Link>
