@@ -23,7 +23,7 @@ export default function InsightCard({
 
       <Link
         href={`/insights/${insight.slug}`}
-        className="text-link mt-auto pt-7 inline-flex items-center gap-2 text-sm"
+        className="text-link mt-7 inline-flex items-center gap-2 text-sm"
       >
         Read More →
       </Link>
