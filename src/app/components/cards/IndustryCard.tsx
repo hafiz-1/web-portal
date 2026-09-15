@@ -14,7 +14,7 @@ export default function IndustryCard({ industry }: { industry: Industry }) {
         className="-z-20 object-cover brightness-[.72] transition duration-500 group-hover:scale-105 group-hover:brightness-[.8]"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#061009]/95 via-[#102016]/64 to-[#102016]/20 transition group-hover:from-[#061009]/90" />
-      <div className="w-full p-4 pb-5 text-left text-white sm:p-5 sm:pb-6">
+      <div className="relative z-10 flex h-full w-full flex-col items-start justify-start p-4 pb-5 text-left text-white sm:p-5 sm:pb-6">
         <h3
           className="text-xl font-semibold tracking-tight !text-white"
           style={{ WebkitTextFillColor: "white" }}
