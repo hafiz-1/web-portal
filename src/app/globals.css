@@ -12,13 +12,13 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #eef2ee;
   color: var(--ink);
 }
 
 .app-background {
   min-height: 100vh;
-  background: #fff;
+  background: #eef2ee;
 }
 
 /* --------------------------------------------------
@@ -251,6 +251,23 @@ textarea:focus-visible {
 ::selection {
   background: var(--brand-green);
   color: white;
+}
+
+.hero-gradient-title {
+  background: linear-gradient(
+    105deg,
+    #287d35 0%,
+    #4f9f4d 35%,
+    #72b966 50%,
+    #3d9146 65%,
+    #287d35 100%
+  );
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: heading-shimmer 8s ease-in-out infinite;
 }
 
 /* --------------------------------------------------
