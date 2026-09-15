@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { solutions } from "@/data/solutions";
 import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 
 export default async function SolutionPage({
@@ -20,36 +19,38 @@ export default async function SolutionPage({
   }
 
   return (
-    <>
-      <Section>
+    <main>
+      {/* Hero */}
+      <section className="py-6 sm:py-8">
         <Container>
           <p className="text-sm uppercase tracking-widest text-gray-500">
             {solution.category}
           </p>
 
-          <h1 className="gradient-text mt-4 text-5xl font-semibold">
+          <h1 className="gradient-text mt-3 text-4xl font-semibold sm:text-5xl">
             {solution.title}
           </h1>
 
-          <p className="mt-6 max-w-2xl text-xl leading-8 text-gray-600">
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600 sm:text-xl">
             {solution.description}
           </p>
 
-          <div className="mt-8">
+          <div className="mt-6">
             <Button href="/contact">
               Talk to an Expert
             </Button>
           </div>
         </Container>
-      </Section>
+      </section>
 
-      <section className="bg-gray-50 py-20">
+      {/* Key Benefits */}
+      <section className="bg-gray-50 py-6 sm:py-8">
         <Container>
           <h2 className="gradient-text text-3xl font-semibold">
             Key Benefits
           </h2>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
             {solution.benefits.map((benefit) => (
               <div
                 key={benefit}
@@ -62,13 +63,14 @@ export default async function SolutionPage({
         </Container>
       </section>
 
-      <Section>
+      {/* Audience */}
+      <section className="py-6 sm:py-8">
         <Container>
           <h2 className="gradient-text text-3xl font-semibold">
             Who is it for?
           </h2>
 
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-wrap gap-3">
             {solution.audiences.map((audience) => (
               <span
                 key={audience}
@@ -79,7 +81,7 @@ export default async function SolutionPage({
             ))}
           </div>
         </Container>
-      </Section>
-    </>
+      </section>
+    </main>
   );
 }
