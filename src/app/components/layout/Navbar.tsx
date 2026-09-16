@@ -51,51 +51,55 @@ export default function Navbar() {
                 </Link>
 
                 {item.children && (
-                  <div className="invisible absolute left-1/2 top-full w-[42rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                    <div className="grid grid-cols-[12rem_1fr] gap-6 rounded-2xl border border-[#dce6dd] bg-white p-4 shadow-[0_18px_45px_rgb(21_50_25_/_0.14)]">
-                      {item.image && (
-                        <div className="relative min-h-56 overflow-hidden rounded-xl">
-                          <Image
-                            src={item.image}
-                            alt=""
-                            fill
-                            sizes="192px"
-                            className="object-cover"
-                          />
-                        </div>
-                      )}
-
-                      <div className="min-w-0 py-1">
-                        {item.children.map((child) => (
-                          <div
-                            key={child.title}
-                            className="mb-5 last:mb-0"
-                          >
-                            <Link
-                              href={child.href}
-                              className="text-sm font-semibold text-[#18321d] transition hover:text-[#5DAD54]"
-                            >
-                              {child.title}
-                            </Link>
-
-                            {"items" in child &&
-                              child.items && (
-                                <div className="mt-2 grid grid-cols-2 gap-x-5 gap-y-1">
-                                  {child.items.map(
-                                    (subItem) => (
-                                      <Link
-                                        key={subItem.title}
-                                        href={subItem.href}
-                                        className="text-sm leading-6 text-[#5c6a60] transition hover:text-[#367d3d]"
-                                      >
-                                        {subItem.title}
-                                      </Link>
-                                    )
-                                  )}
-                                </div>
-                              )}
+                  <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 translate-y-2 pt-4 opacity-0 transition-all duration-300 ease-out group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-focus-within:visible invisible">
+                    <div className="overflow-hidden rounded-[1.4rem] border border-[#dfe9e1] bg-white shadow-[0_20px_55px_rgba(17,31,22,0.15)] ring-1 ring-black/5 transition-transform duration-300 ease-out group-hover:scale-[1.01] group-focus-within:scale-[1.01]">
+                      <div className="grid grid-cols-[14rem_minmax(0,1fr)]">
+                        {item.image && (
+                          <div className="relative min-h-[15rem] overflow-hidden bg-[#edf4ee]">
+                            <Image
+                              src={item.image}
+                              alt=""
+                              fill
+                              sizes="224px"
+                              className="object-contain p-3"
+                            />
                           </div>
-                        ))}
+                        )}
+
+                        <div className="p-5 lg:p-6">
+                          <div className="grid gap-4 md:grid-cols-2">
+                            {item.children.map((child) => (
+                              <div
+                                key={child.title}
+                                className="rounded-2xl border border-[#edf2ee] bg-[#f7faf7] p-3.5 transition-colors hover:border-[#b9d5bb] hover:bg-[#f0f8f0]"
+                              >
+                                <Link
+                                  href={child.href}
+                                  className="inline-block text-[0.98rem] font-semibold tracking-[-0.02em] text-[#18321d] transition hover:text-[#5DAD54]"
+                                >
+                                  {child.title}
+                                </Link>
+
+                                {"items" in child &&
+                                  child.items && (
+                                    <div className="mt-2.5 space-y-1.5">
+                                      {child.items.map(
+                                        (subItem) => (
+                                          <Link
+                                            key={subItem.title}
+                                            href={subItem.href}
+                                            className="block text-[0.82rem] leading-5 text-[#5c6a60] transition hover:text-[#367d3d] hover:translate-x-0.5"
+                                          >
+                                            {subItem.title}
+                                          </Link>
+                                        )
+                                      )}
+                                    </div>
+                                  )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
