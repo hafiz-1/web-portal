@@ -8,19 +8,19 @@ import Navbar from "@/components/layout/Navbar";
 
 const slides = [
   {
-    image: "/solutions/connectivity.jpg",
+    image: "/solutions/connectivity.png",
     alt: "Connectivity solutions",
   },
   {
-    image: "/solutions/cybersecurity.jpg",
+    image: "/solutions/cybersecurity.png",
     alt: "Cybersecurity solutions",
   },
   {
-    image: "/solutions/energy.jpg",
+    image: "/solutions/energy.png",
     alt: "Energy solutions",
   },
   {
-    image: "/solutions/cloud-data-centre.jpg",
+    image: "/solutions/cloud-data-centre.png",
     alt: "Cloud and Data Centre solutions",
   },
 ];
@@ -65,11 +65,10 @@ export default function Hero() {
       {/* Sliding Background Images */}
       <div className="absolute inset-0 overflow-hidden">
         <div
-          className={`flex h-full ${
-            isTransitioning
+          className={`flex h-full ${isTransitioning
               ? "transition-transform duration-1000 ease-in-out"
               : ""
-          }`}
+            }`}
           style={{
             transform: `translateX(-${currentSlide * 100}%)`,
           }}
@@ -101,7 +100,7 @@ export default function Hero() {
       {/* Hero Content */}
       <Container className="relative z-10 flex min-h-[60vh] -translate-x-6 items-end py-16 sm:py-20 lg:min-h-[36rem] lg:py-16">
         <div className="hero-content max-w-4xl">
-          <h1 className="hero-item hero-title hero-gradient-title pb-3 text-4xl font-semibold leading-[1.16] tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="hero-item pb-3 text-4xl font-semibold leading-[1.16] tracking-tight text-white sm:text-5xl md:text-6xl">
             Powering the digital future.
           </h1>
 

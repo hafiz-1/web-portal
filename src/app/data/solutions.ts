@@ -8,7 +8,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Reliable connectivity solutions designed for modern organizations.",
-    image: "/solutions/connectivity.jpg",
+    image: "/solutions/connectivity.png",
     audiences: ["Enterprise", "SME", "Carriers"],
     benefits: [
       "Reliable connectivity",
@@ -24,7 +24,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Flexible cloud and data center infrastructure for growing businesses.",
-    image: "/solutions/cloud-data-centre.jpg",
+    image: "/solutions/cloud-data-centre.png",
     audiences: ["Enterprise", "SME"],
     benefits: [
       "Flexible infrastructure",
@@ -40,7 +40,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Modern networking and infrastructure solutions.",
-    image: "/solutions/network-infrastructure.jpg",
+    image: "/solutions/network-infrastructure.png",
     audiences: ["Enterprise"],
     benefits: [
       "Better visibility",
@@ -56,7 +56,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Security solutions that protect your digital environment.",
-    image: "/solutions/cybersecurity.jpg",
+    image: "/solutions/cybersecurity.png",
     audiences: ["Enterprise", "SME"],
     benefits: [
       "Threat protection",
@@ -71,7 +71,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Software development and data solutions for digital transformation.",
-    image: "/solutions/software-data.jpg",
+    image: "/solutions/software-data.png",
     audiences: ["Enterprise"],
     benefits: [
       "Custom software",
@@ -86,7 +86,7 @@ export const solutions: Solution[] = [
     category: "Technology",
     description:
       "Digital collaboration tools that keep teams connected.",
-    image: "/solutions/collaboration.jpg",
+    image: "/solutions/collaboration.png",
     audiences: ["Enterprise", "SME"],
     benefits: [
       "Better communication",
@@ -101,7 +101,7 @@ export const solutions: Solution[] = [
     category: "Infrastructure",
     description:
       "Energy solutions focused on efficiency and reliability.",
-    image: "/solutions/energy.jpg",
+    image: "/solutions/energy.png",
     audiences: ["Enterprise", "Public Sector"],
     benefits: [
       "Energy efficiency",
