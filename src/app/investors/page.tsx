@@ -16,7 +16,7 @@ export default function InvestorsPage() {
             className="rounded-2xl border p-8"
           >
             <h2 className="text-link text-lg font-medium text-[#5DAD54] transition hover:underline">
-              Investor Contacts →
+              Investor Contacts 
             </h2>
           </Link>
 
@@ -25,7 +25,7 @@ export default function InvestorsPage() {
             className="rounded-2xl border p-8"
           >
             <h2 className="text-link text-lg font-medium text-[#5DAD54] transition hover:underline">
-              AGM Notices →
+              AGM Notices 
             </h2>
           </Link>
         </div>
