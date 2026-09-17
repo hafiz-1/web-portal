@@ -11,7 +11,7 @@ export default function LeadershipPage() {
   return (
     <Section>
       <Container>
-        <h1 className="text-5xl font-semibold">
+        <h1 className="page-title pt-8">
           Leadership
         </h1>
 

@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="absolute inset-x-0 top-0 z-50 bg-gradient-to-b from-black/75 via-black/55 to-black/10">
+      <header className="absolute inset-x-0 top-0 z-[100] bg-gradient-to-b from-black/75 via-black/55 to-black/10">
         <div className="mx-auto flex h-[4.75rem] max-w-[76rem] items-center justify-between px-5 sm:px-6 lg:px-8">
           <Link
             href="/"
@@ -51,8 +51,8 @@ export default function Navbar() {
                 </Link>
 
                 {item.children && (
-                  <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[44rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 translate-y-2 pt-4 opacity-0 transition-all duration-300 ease-out group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-focus-within:opacity-100 group-hover:visible group-focus-within:visible invisible">
-                    <div className="overflow-hidden rounded-[1.4rem] border border-[#dfe9e1] bg-white shadow-[0_20px_55px_rgba(17,31,22,0.15)] ring-1 ring-black/5 transition-transform duration-300 ease-out group-hover:scale-[1.01] group-focus-within:scale-[1.01]">
+                  <div className="pointer-events-none invisible absolute left-1/2 top-full z-[110] w-[44rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 translate-y-2 pt-4 opacity-0 transition-all duration-300 ease-out group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                    <div className="overflow-hidden rounded-[1.4rem] border border-[#dfe9e1] bg-white shadow-[0_20px_55px_rgba(17,31,22,0.15)] ring-1 ring-black/5 transition-transform duration-300 ease-out group-hover:scale-[1.01]">
                       <div className="grid grid-cols-[14rem_minmax(0,1fr)]">
                         {item.image && (
                           <div className="relative min-h-[15rem] overflow-hidden bg-[#edf4ee]">
@@ -80,22 +80,19 @@ export default function Navbar() {
                                   {child.title}
                                 </Link>
 
-                                {"items" in child &&
-                                  child.items && (
-                                    <div className="mt-2.5 space-y-1.5">
-                                      {child.items.map(
-                                        (subItem) => (
-                                          <Link
-                                            key={subItem.title}
-                                            href={subItem.href}
-                                            className="block text-[0.82rem] leading-5 text-[#5c6a60] transition hover:text-[#367d3d] hover:translate-x-0.5"
-                                          >
-                                            {subItem.title}
-                                          </Link>
-                                        )
-                                      )}
-                                    </div>
-                                  )}
+                                {"items" in child && child.items && (
+                                  <div className="mt-2.5 space-y-1.5">
+                                    {child.items.map((subItem) => (
+                                      <Link
+                                        key={subItem.title}
+                                        href={subItem.href}
+                                        className="block text-[0.82rem] leading-5 text-[#5c6a60] transition hover:translate-x-0.5 hover:text-[#367d3d]"
+                                      >
+                                        {subItem.title}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
                             ))}
                           </div>
@@ -134,7 +131,7 @@ export default function Navbar() {
                   name="q"
                   type="search"
                   placeholder="Search"
-                  className="h-10 w-36 rounded-full border border-white/30 bg-black/25 px-4 text-[17px] font-medium leading-[19px] text-white placeholder:text-white/75 backdrop-blur-md outline-none transition focus:border-[#7BC96F]"
+                  className="h-10 w-36 rounded-full border border-white/30 bg-black/25 px-4 text-[17px] font-medium leading-[19px] text-white placeholder:text-white/75 outline-none backdrop-blur-md transition focus:border-[#7BC96F]"
                 />
               </label>
             </form>
@@ -148,6 +145,7 @@ export default function Navbar() {
           </nav>
 
           <button
+            type="button"
             className="button-motion text-2xl text-white lg:hidden"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"

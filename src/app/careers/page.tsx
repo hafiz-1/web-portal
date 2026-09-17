@@ -8,7 +8,7 @@ export default function CareersPage() {
   return (
     <>
       <Section className="bg-gray-950 text-white">
-        <Container>
+        <Container className="p-8">
           <p className="text-sm uppercase tracking-widest text-gray-400">
             Careers
           </p>

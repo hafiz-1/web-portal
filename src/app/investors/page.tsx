@@ -5,8 +5,8 @@ import Section from "@/components/ui/Section";
 export default function InvestorsPage() {
   return (
     <Section>
-      <Container>
-        <h1 className="text-5xl font-semibold">
+      <Container className="p-8">
+        <h1 className="gradient-text page-title">
           Investors
         </h1>
 

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import Navbar from "@/components/layout/Navbar";
 
 const slides = [
   {
@@ -93,9 +92,6 @@ export default function Hero() {
 
       {/* Image Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-black/10" />
-
-      {/* Navbar */}
-      <Navbar />
 
       {/* Hero Content */}
       <Container className="relative z-10 flex min-h-[60vh] -translate-x-6 items-end py-16 sm:py-20 lg:min-h-[36rem] lg:py-16">

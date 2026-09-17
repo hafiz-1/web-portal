@@ -10,8 +10,8 @@ export default function WhatWeDoPage() {
   return (
     <>
       <Section>
-        <Container>
-          <SectionHeader
+        <Container className="p-8">
+          <SectionHeader 
             eyebrow="What We Do"
             title="Technology solutions and services designed around your needs."
             description="Explore our solutions and the professional and managed services that help organizations implement and operate them."

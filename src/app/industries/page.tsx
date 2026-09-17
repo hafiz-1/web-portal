@@ -6,7 +6,7 @@ import IndustriesGrid from "@/components/sections/IndustriesGrid";
 export default function IndustriesPage() {
   return (
     <Section>
-      <Container>
+      <Container className="p-8">
         <SectionHeader
           eyebrow="Industries"
           title="Technology built for the way your industry works."

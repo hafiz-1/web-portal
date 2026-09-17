@@ -6,7 +6,7 @@ import InsightsGrid from "@/components/sections/InsightsGrid";
 export default function InsightsPage() {
   return (
     <Section>
-      <Container>
+      <Container className="p-8" >
         <SectionHeader
           eyebrow="Insights"
           title="News, ideas and perspectives from Wateen."

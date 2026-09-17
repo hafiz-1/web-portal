@@ -6,7 +6,7 @@ export default function PartnersPage() {
   return (
     <Section>
       <Container>
-        <h1 className="text-5xl font-semibold">
+        <h1 className="page-title pt-8">
           Our Partners
         </h1>
 

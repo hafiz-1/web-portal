@@ -5,7 +5,7 @@ export default function CSRPage() {
   return (
     <Section>
       <Container>
-        <h1 className="text-5xl font-semibold">
+        <h1 className="page-title pt-8">
           Corporate Social Responsibility
         </h1>
 

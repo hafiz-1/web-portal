@@ -5,11 +5,11 @@ export default function CompanyProfilePage() {
   return (
     <Section>
       <Container>
-        <p className="text-sm uppercase tracking-widest text-gray-500">
+        <p className="page-kicker py-8">
           About Wateen
         </p>
 
-        <h1 className="mt-4 text-5xl font-semibold">
+        <h1 className="page-title gradient-text">
           Company Profile
         </h1>
 

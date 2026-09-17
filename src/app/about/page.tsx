@@ -12,12 +12,12 @@ const links = [
 export default function AboutPage() {
   return (
     <Section>
-      <Container>
-        <p className="text-sm uppercase tracking-widest text-gray-500">
+      <Container className="p-8">
+        <p className=" page-kicker">
           About Wateen
         </p>
 
-        <h1 className="mt-4 text-5xl font-semibold">
+        <h1 className="gradient-text page-title">
           About Wateen
         </h1>
 
