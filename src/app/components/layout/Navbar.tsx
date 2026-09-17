@@ -32,6 +32,10 @@ export default function Navbar() {
             className="hidden items-center gap-7 lg:flex"
             aria-label="Primary navigation"
           >
+            <Link href="/" className="flex items-center gap-1 text-[17px] font-medium leading-[19px] text-white transition hover:text-[#7BC96F]">
+              Home
+            </Link>
+
             {navigation.map((item) => (
               <div
                 key={item.title}

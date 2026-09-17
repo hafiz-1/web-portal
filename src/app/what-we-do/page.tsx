@@ -17,13 +17,13 @@ export default function WhatWeDoPage() {
             description="Explore our solutions and the professional and managed services that help organizations implement and operate them."
           />
 
-          <h2 className="mb-8 text-3xl font-semibold">
+          <h2 className="page-title ">
             Solutions
           </h2>
 
           <SolutionsGrid />
 
-          <h2 className="mb-8 mt-24 text-3xl font-semibold">
+          {/* <h2 className="mb-8 mt-24 text-3xl font-semibold">
             Services
           </h2>
 
@@ -57,7 +57,7 @@ export default function WhatWeDoPage() {
                 </Link>
               </div>
             ))}
-          </div>
+          </div> */}
         </Container>
       </Section>
       <CTASection />

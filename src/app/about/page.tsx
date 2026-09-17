@@ -37,7 +37,7 @@ export default function AboutPage() {
                 {title}
               </h2>
 
-              <p className="mt-4 text-gray-500">
+              <p className="text-link mt-4 text-lg font-medium text-[#5DAD54] transition hover:underline">
                 Explore →
               </p>
             </Link>

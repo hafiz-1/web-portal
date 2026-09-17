@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <Section>
+      <Section className="pb-8">
         <Container>
           <SectionHeader
             eyebrow="What We Do"
@@ -27,7 +27,7 @@ export default function Home() {
       </Section>
 
       <Section className="bg-gray-50">
-        <Container>
+        <Container className="pb-8">
           <SectionHeader
             eyebrow="Who We Serve"
             title="Solutions for every stage of business."
